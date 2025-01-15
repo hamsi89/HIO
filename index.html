@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css">
+    <script src="js/jquery.fullpage.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+<body>
+    <header class="header">
+        <div class="inner">
+            <h1 class="logo">
+                <img src="img/logo2.png">
+            </h1>
+            <div class="gnb">
+                <ul>
+                    <li><a class="sb" href="#">ABOUT US</a></li>
+                    <li><a class="sb" href="#">MENU</a></li>
+                    <li><a class="sb" href="#">FRANCHISE</a></li>
+                    <li><a class="sb" href="#">STORE</a></li>
+                    <li><a class="sb" href="#">COMMUNITY</a></li>
+                </ul>
+            </div><!-- gnb end -->
+            <ul class="iconbox">
+                <li><img src="img/blog.png"></li>
+                <li><img src="img/facebook.png"></li>
+                <li><img src="img/instar.png"></li>
+            </ul>
+        </div><!-- inner end -->
+        </header>
+
+    <div id="fullpage">
+        <div class="section">  
+            <section class="section-01">
+            <video data-autoplay muted loop>
+                <source src="img/Y2meta.app-하이오커피.mp4">
+            </video>
+            <div class="textbox">
+                <h2>PROFESSIONAL COFFEE,</h2>
+                <h2>TOUCHING TASTE,</h2>
+                <h1>HIO COFFEE</h1>
+            </div>
+        </section>
+        </div>
+
+        <div class="section">    
+      
+             
+                <div class="slide"><img src="img/2.jfif"></div>
+                <div class="slide"> Slide 2 </div>
+                <div class="slide"> Slide 3 </div>
+                <div class="slide"> Slide 4 </div>
+       
+        <!--     <section class="section-03">
+                <div class="marquee">
+        
+                    <div class="marquee__group">
+                        <div><span class="white">A REASONABLE PRICE</span></div>
+                        <div><span class="fill">A REASONABLE PRICE</span></div>
+                    </div>
+        
+                    <div class="marquee__group" aria-hidden="true">
+                        <div><span class="white">A REASONABLE PRICE</span></div>
+                        <div><span class="fill">A REASONABLE PRICE</span></div>
+        
+                    </div>
+                </div>
+                <div class="marquee">
+        
+                    <div class="marquee__group02">
+                        <div><span class="fill">A HIGH-QUALITY COFFEE</span></div>
+                        <div><span class="white">A HIGH-QUALITY COFFEE</span></div>
+                    </div>
+        
+                    <div class="marquee__group02" aria-hidden="true">
+                        <div><span class="fill">A HIGH-QUALITY COFFEE</span></div>
+                        <div><span class="white">A HIGH-QUALITY COFFEE</span></div>
+        
+                    </div>
+                </div>
+            </section> -->
+        </div>
+
+        <div class="section">
+            <section class="section-04">
+                <ul>
+                    <li class="box-01"><!-- <img src="img/bg_sf_01.png"> --></li>
+                    <li>
+                        <div class="textbox">
+                            <h3>HIO</h3>
+                            <h4>COFFEE's</h4>
+                            <h5>Valuation</h5>
+                            <p>각 나라별 산지에서 엄선된 생두를 사용함과<br />
+                                동시에 생두의 생산에 직접적인 영향을 주는<br />
+                                바람, 태양, 비, 기후, 토양, 고도, 온도, 경작 법,<br />
+                                수확 방법 등 까다로운 조건을 고려하여<br />
+                                친환경적인 농법으로 재배된 잘 익은 체리만을<br />
+                                고집한 원두입니다.</p>
+                        </div>
+                    </li>
+                    <li class="box-02"></li>
+                    <li class="box-03"></li>
+                </ul>
+            </section>
+        </div>
+        <div class="section"> 
+            
+        <div class="sec04">
+            <div class="slide">
+                <div class="item">
+                <div class="textbox">
+                    <div class="up">
+                        <h1>HIO'S</h1>
+                        <h1>BEST MENU</h1>
+                    </div>
+                    <div class="down">
+                        <h1>STRAWBERRY</h1>
+                        <h1>SNOWING</h1>
+                    </div>
+                </div><!-- temxbox end -->
+            <img src="img/스트로.png">
+            </div>
+            <div class="slide"> Slide 2 </div>
+            <div class="slide"> Slide 3 </div>
+            <div class="slide"> Slide 4 </div>
+        </div>
+    </div>
+    </div>  
+
+    <div class="section">
+
+    </div>
+</body>
+
+<script>
+
+ $('#fullpage').fullpage({
+	anchors: ['firstPage'],
+    slidesNavigation: true,
+    easing: 'easeInOutCubic',
+    easingcss3: 'ease',
+	afterLoad: function(anchorLink, index){
+		var loadedSection = $(this);
+		//using index
+	 	//using anchorLink
+		if(anchorLink == 'firstPage'){
+            $('.sb').css('color', 'white')
+		} else {
+            $('.sb').css('color', 'black')
+        }
+	}
+});
+
+/* 
+$(window).bind('wheel', function(event){
+    if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
+        // scroll up
+        console.log("스크롤 위로");
+    }
+    else {
+        // scroll down
+        console.log("스크롤 아래로");
+    }
+}); */
+
+/* 
+$(window).on('scroll',function(){
+    if($(window).scrollTop()>=1000){
+
+    $('.sb').css('color', 'black')
+    } else {
+
+    $('.sb').css('color', 'white')
+    }
+}) */
+
+</script>
+
+</html>
